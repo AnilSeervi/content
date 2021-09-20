@@ -35,9 +35,9 @@ browser-compat: html.elements.label
 <p>The form control that a label is labeling is called the <em>labeled control</em> of the label element. Multiple labels can be associated with the same form control:</p>
 
 <pre class="brush: html">
-&lt;label for="username"&gt;Enter your username:&lt;/label&gt;
-&lt;input id="username"&gt;
-&lt;label for="username"&gt;&lt;a href="/username-forgot"&gt;Forgot your username?&lt;/a&gt;&lt;/label&gt;
+&lt;label for="background"&gt;Background:&lt;/label&gt;
+&lt;input type="color" id="background"&gt;
+&lt;label for="background"&gt;Pick a Color&lt;/label&gt;
 </pre>
 
 <h2 id="Attributes">Attributes</h2>
@@ -47,7 +47,7 @@ browser-compat: html.elements.label
 <dl>
  <dt>{{htmlattrdef("for")}}</dt>
  <dd>
- <p>The value of the <code>for</code> attribute must be a single {{htmlattrxref("id")}} for a <a href="/en-US/docs/Web/Guide/HTML/Content_categories#form_labelable">labelable</a> form-related element in the same document as the <code>&lt;label&gt;</code> element. So, any given <code>label</code> element can be associated with only one form control.</p>
+ <p>The value of the <code>for</code> attribute must be a single {{htmlattrxref("id")}} for a <a href="/en-US/docs/Web/Guide/HTML/Content_categories#form-associated_content">labelable</a> form-related element in the same document as the <code>&lt;label&gt;</code> element. So, any given <code>label</code> element can be associated with only one form control.</p>
 
  <p>The first element in the document with an <code>id</code> attribute matching the value of the <code>for</code> attribute is the <em>labeled control</em> for this <code>label</code> element — if the element with that <code>id</code> is actually a <a href="https://html.spec.whatwg.org/multipage/forms.html#category-label">labelable element</a>. If it is <em>not</em> a labelable element, then the <code>for</code> attribute has no effect. If there are other elements that also match the <code>id</code> value, later in the document, they are not considered.
 
